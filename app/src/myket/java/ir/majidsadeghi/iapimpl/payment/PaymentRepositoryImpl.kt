@@ -7,8 +7,7 @@ import ir.myket.billingclient.IabHelper.ITEM_TYPE_INAPP
 import ir.myket.billingclient.util.Purchase
 import java.lang.ref.WeakReference
 
-class PaymentRepositoryImpl(override val activity: Activity
-) : PaymentRepository {
+class PaymentRepositoryImpl(activity: Activity) : PaymentRepository {
     private var weakActivity = WeakReference(activity)
     private var mHelper: IabHelper? = null
     override fun initService(result: (Result<String>) -> Unit) {

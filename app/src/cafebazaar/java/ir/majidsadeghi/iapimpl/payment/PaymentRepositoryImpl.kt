@@ -10,7 +10,7 @@ import ir.cafebazaar.poolakey.entity.PurchaseInfo
 import ir.cafebazaar.poolakey.request.PurchaseRequest
 import java.lang.ref.WeakReference
 
-class PaymentRepositoryImpl(override val activity: Activity) : PaymentRepository {
+class PaymentRepositoryImpl(activity: Activity) : PaymentRepository {
     private var paymentConnection: Connection? = null
     private var payment: Payment? = null
     private var weakActivity = WeakReference(activity)
